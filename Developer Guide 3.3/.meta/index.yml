@@ -1,0 +1,18 @@
+# Developer Guide
+toc:
+    Introduction:
+        - 'What is TAO?'
+    Installation:
+        - 'Prerequisites'
+        - 'Windows'
+        - 'CentOS, RedHat and Fedora'
+        - 'Ubuntu and Debian'
+        - 'MacOS'
+        - 'Docker (Experimental)'
+    Development:
+        - 'Life Cycle'
+        - 'How to submit a patch'
+        - 'How to submit a translation'
+        - 'How to submit a bug'
+        - 'REST APIs'
+        - 'Technical Documentation'
