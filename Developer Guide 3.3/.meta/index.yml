@@ -16,3 +16,5 @@ toc:
         - 'How to submit a bug'
         - 'REST APIs'
         - 'Technical Documentation'
+    Appendix:
+        - 'GPL Version 2'
