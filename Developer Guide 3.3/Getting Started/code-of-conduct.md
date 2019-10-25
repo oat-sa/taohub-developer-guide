@@ -1,6 +1,6 @@
 # Code of Conduct
 
-> The Code of Conduct provides guidelines for behavior with the TAO Community, how to report an issue, and our responsibilities to our Community members.
+> The Code of Conduct provides guidelines for behavior within the TAO Community, how to report a violation, and the responsibilities to our Community members.
 
 ## Our Pledge
 
@@ -8,7 +8,7 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 ## Our Standards
 
-Examples of behavior that contributes to creating a positive environment include:
+Examples of behavior that contribute to creating a positive environment include:
 
 * Using welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences

@@ -1,28 +1,30 @@
 # Contributing to TAO
 
-> When contributing to the TAO project, please first discuss the change you wish to make via issue.
+> Information regarding the process for contributing to TAO.
 
-Contributions to the TAO codebase are made using the fork & pull model. This contribution model has contributors maintaining their own copy of the forked codebase (which can easily be synced with the main copy). The forked repository is then used to submit a  “pull request” to merge the set of changes. For more information on pull requests, please refer to [GitHub Help](https://help.github.com/articles/about-pull-requests/).
+Contributions to the TAO codebase are made using the fork & pull model. This contribution model has contributors maintaining their own copy of the forked codebase. The forked repository can easily be synced with the main copyi by submitting a “pull request” to merge the set of changes. For more information on pull requests, please refer to [GitHub Help](https://help.github.com/articles/about-pull-requests/).
 
-The TAO development team will review all issues and contributions submitted by the community of developers in the first in, first out order. During the review, we might require clarifications from the contributor. If there is no response from the contributor within two weeks, the pull request will be closed.
+The TAO development team will review all issues and contributions submitted by the community of developers utilizing a first in, first out order. During the review, we might require clarifications from the contributor and if there is no response from the contributor within two weeks, the pull request will be closed.
 
 ## Contribution process
 
-If you are unfamiliar with Git, please see our [Git Basics](git-basics.md) page for information on installing Git, getting a GitHub account, and also some basics Git commands.
+If you are unfamiliar with Git, please see our [Git Basics](git-basics.md) page for information on installing Git, getting a GitHub account, and some basics commands.
 
-Once you are configured and are ready to contribute, you're ready to start contributing using the following process:
+Once you are configured, you will utilize the following process to contribute:
 
-1. Check the open an closed issues for similar proposals of intended contribution before starting work on a new contribution.
-2. Create and test your work.
-3. Fork the repository of the TAO extension you wish to contribute.
-4. Create a branch that follows the [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html) branching model.
-5. Once development has been done, create a pull request that targets the development branch of the extension you are contributing.
-6. If your code depends on changes in another extension, create a draft pull request, until all required pull requests are created.
+1. Check the open and closed issues for similar proposals of intended contribution before starting work on a new contribution.
+2. Fork the repository of the TAO extension you wish to contribute.
+3. Create a branch that follows the [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html) branching model.
+4. Create and test your work.
+5. Once development has been done, create a pull request that targets the development branch of the extension you are contributing to.
+6. If your code depends on changes in another extension, create a draft pull request until all required pull requests are created.
 7. Once your contribution is received the TAO development team will review the contribution and collaborate with you as needed.
 
 ### Templates
 
-Contribution Template
+The following templates are designed to help ensure all relavant information in included in Issues that created as well a checklist to include in your Pull Request.
+
+Issue Template
 
 ```
 ### Subject of the issue
