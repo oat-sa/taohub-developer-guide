@@ -8,15 +8,15 @@ The TAO development team will review all issues and contributions submitted by t
 
 ## Contribution process
 
-If you are unfamiliar with Git, please see our [Git Basics](git-basics.md) page for information on installing Git, getting a GitHub account, and some basics commands.
+If you are unfamiliar with Git, please see our [Git Basics](git-basics.md) page for information on installing Git, getting a GitHub account, and some basic commands.
 
 Once you are configured, you will utilize the following process to contribute:
 
 1. Check the open and closed issues for similar proposals of intended contribution before starting work on a new contribution.
-2. Fork the repository of the TAO extension you wish to contribute.
-3. Create a branch that follows the [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html) branching model.
+2. Fork the repository of the TAO extension you wish to contribute to.
+3. You can create a branch that follows the [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html) branching model, or you can make your changes in your local develop branch.
 4. Create and test your work.
-5. Once development has been done, create a pull request that targets the development branch of the extension you are contributing to.
+5. Once development has been completed and pushed to GitHub, create a pull request that targets the develop branch of the extension you are contributing to.
 6. If your code depends on changes in another extension, create a draft pull request until all required pull requests are created.
 7. Once your contribution is received the TAO development team will review the contribution and collaborate with you as needed.
 
@@ -24,7 +24,7 @@ Once you are configured, you will utilize the following process to contribute:
 
 The following templates are designed to help ensure all relavant information in included in Issues that created as well a checklist to include in your Pull Request.
 
-Issue Template
+## Issue Template
 
 ```
 ### Subject of the issue
@@ -48,7 +48,7 @@ Tell us what happens instead
 
 ```
 
-Pull Request Template
+## Pull Request Template
 
 ```
 _Before you submit a pull request, please make sure you have to following:_

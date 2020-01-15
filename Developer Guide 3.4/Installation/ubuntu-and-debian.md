@@ -65,7 +65,7 @@ exit
 ```
 
 ## Configure Apache
-Using the editor of your choice, you will need to configure the ServerName as well as the directory you are installing in. If you are using virtual hosts, you will need to follow the Apache instructions which can be found [here](https://httpd.apache.org/docs/2.4/vhosts/examples.html).
+Using the editor of your choice, you will need to configure the ServerName, a Virtual Host, as well as the directory you are installing in. If you are using multiple virtual hosts, the Apache instructions can be found [here](https://httpd.apache.org/docs/2.4/vhosts/examples.html).
 
 ```bash
 sudo nano /etc/apache2/apache2.conf
@@ -74,6 +74,13 @@ sudo nano /etc/apache2/apache2.conf
 Configure _ServerName_
 ```bash
 ServerName <hostname or IP>
+```
+Configure Virtual Host
+```bash
+<VirtualHost *:80>
+        ServerName 192.168.1.146
+        DocumentRoot /var/www/html/tao
+</VirtualHost>
 ```
 
 Configure Directory
@@ -92,7 +99,8 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 ```
 
 Turn on the _mod-rewrite_ module
-```bash
+```
+bash
 sudo a2enmod rewrite
 ```
 
@@ -151,7 +159,7 @@ Install TAO components on to the server utilizing composer and then change owner
 ```
 cd /var/www/html/tao
 sudo composer install
-sudo chown -R www-data tao
+sudo chown -R www-data ../tao
 ```
 
 Create directory for your data.
@@ -169,7 +177,7 @@ sudo chmod u+x MathJax_Install_TAO_3x.sh
 sudo ./MathJax_Install_TAO_3x.sh
 ```
 
-You can now complete your installation either on the command line with the following command:
+You can now complete your installation on the command line with the following command:
 
 ```
 sudo -u www-data php tao/scripts/taoInstall.php \
