@@ -1,4 +1,0 @@
-# Ubuntu and Debian
-
-> Synopsis
-
