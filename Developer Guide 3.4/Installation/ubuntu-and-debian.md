@@ -2,7 +2,7 @@
 
 > The following instructions are for installing a specific sprint of TAO on Ubuntu 18.04 and can be easily adjusted for Debian Buster/Sid.
 
-The following instructions are for Ubuntu 18.04 and utilize /var/www/html/tao as the working directory for installationinstallation and /var/www/html as the DocumentRoot. Should you choose another Operating System version, another Red Hat based flavor, directory location, or DocumentRoot you will need to adjust these directions as appropriate. These instructions make the assumption that you have access to the command line, if needed, refer to your hosting company for how to proceed if you do not have SSH access to your environment.
+The following instructions are for Ubuntu 18.04 and utilize /var/www/html/tao as the working directory for installationinstallation and /var/www/html as the DocumentRoot. Should you choose another Operating System version, another Debian based flavor, directory location, or DocumentRoot you will need to adjust these directions as appropriate. These instructions make the assumption that you have access to the command line, if needed, refer to your hosting company for how to proceed if you do not have SSH access to your environment.
 
 ## Server Preparation
 Make sure the server is up to date:
@@ -75,10 +75,11 @@ Configure _ServerName_
 ```bash
 ServerName <hostname or IP>
 ```
+
 Configure Virtual Host
 ```bash
 <VirtualHost *:80>
-        ServerName 192.168.1.146
+        ServerName <hostname or IP>
         DocumentRoot /var/www/html/tao
 </VirtualHost>
 ```
@@ -160,13 +161,6 @@ Install TAO components on to the server utilizing composer and then change owner
 cd /var/www/html/tao
 sudo composer install
 sudo chown -R www-data ../tao
-```
-
-Create directory for your data.
-
-```
-mkdir -p /opt/data/tao
-sudo chown -R www-data /opt/data/tao
 ```
 
 Install MathJax on the server if needed.

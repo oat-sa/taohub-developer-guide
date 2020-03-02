@@ -14,7 +14,7 @@ sudo yum update
 Add the _Epel_ repository and install yum utilities.
 
 ```
-sudo yum -y install epel-release yum-utils wget
+sudo yum -y install epel-release yum-utils wget nano
 ```
 
 Prepare server to install PHP 7.2 and MySQL
@@ -27,7 +27,7 @@ sudo yum-config-manager --enable remi-php72
 
 Add the MySQL community repositories in order to install MySQL 5.7 and then configure it for the correct version.
 ```
-sudo yum -y https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+sudo yum -y install http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql-community-release-el7-7.noarch.rpm
 ```
 
 Once the system is up to date, you will need to install the required packages to create your LAMP stack as well as the packages necessary to complete your TAO installation if not already present.
@@ -57,7 +57,7 @@ php-mcrypt \
 php-opcache \
 php-tidy \
 policycoreutils-python \
-nano
+npm 
 ```
 
 ## Configure MySQL
@@ -101,7 +101,7 @@ exit
 
 
 ## Configure Apache
-Using the editor of your choice, you will need to configure the ServerName as well as the directory you are installing in. If you are using virtual hosts, you will need to follow the Apache instructions which can be found here(https://httpd.apache.org/docs/2.4/vhosts/examples.html)
+Using the editor of your choice, you will need to configure the ServerName, a Virtual Host, as well as the directory you are installing in. If you are using multiple virtual hosts, you will need to follow the Apache instructions which can be found here(https://httpd.apache.org/docs/2.4/vhosts/examples.html)
 
 ```
 sudo nano /etc/httpd/conf/httpd.conf
@@ -111,6 +111,14 @@ Configure ServerName
 
 ```
 ServerName <hostname or IP>
+Listen <hostname or IP>:80
+```
+Configure Virtual Host
+```bash
+<VirtualHost *:80>
+        ServerName <hostname or IP>
+        DocumentRoot /var/www/html/tao
+</VirtualHost>
 ```
 
 Configure Directory
@@ -209,13 +217,6 @@ sudo chmod a+w tao/views/locales/
 sudo chmod a+w config
 ```
 
-Create directory for your data.
-
-```
-mkdir -p /opt/data/tao
-sudo chown -R apache /opt/data/tao
-```
-
 Install MathJax on the server if needed.
 
 ```
@@ -243,7 +244,7 @@ sudo -u www-data php tao/scripts/taoInstall.php \
 And your TAO instance will be available at:
 
 ```
-http://<hostname or IP>/tao 
+http://<hostname or IP>/
 ```
 
-Or you can install TAO in your browser by going to `http://<hostname or IP>/tao` if you have followed the above instructions. If you did not follow the above instructions for your Apache configuration you will need to adjust the URL as appropriate. 
+Or you can install TAO in your browser by going to `http://<hostname or IP>/` if you have followed the above instructions. If you did not follow the above instructions for your Apache configuration you will need to adjust the URL as appropriate. 
