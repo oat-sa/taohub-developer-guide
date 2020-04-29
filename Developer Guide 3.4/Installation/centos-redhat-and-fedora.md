@@ -93,7 +93,7 @@ sudo su -
 mysql -p
 create database <database>;
 create user '<user>'@'localhost' identified by '<password>';
-grant all privileges on <database>.* to '<user>@'localhost' with grant option;
+grant all privileges on <database>.* to '<user>'@'localhost' with grant option;
 flush privileges;
 quit
 exit
