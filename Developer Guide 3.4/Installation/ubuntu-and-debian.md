@@ -58,7 +58,7 @@ mysql
 create database <database>;
 create user '<user>'@'localhost';
 set password for '<user>'@'localhost' = PASSWORD('<password>');
-grant all privileges on <database>.* to '<user>@'localhost' identified by '<password>';
+grant all privileges on <database>.* to '<user>'@'localhost' identified by '<password>';
 flush privileges;
 quit
 exit
